@@ -100,7 +100,6 @@ parser.add_argument("--every","-e", help="Measure every N seconds", type=int, me
 callbackgroup = parser.add_argument_group("Callback related functions")
 callbackgroup.add_argument("--callback","-call", help="Pass the path to a program/script that will be called on each new measurement")
 callbackgroup.add_argument("--name","-n", help="Give this sensor a name reported to the callback script", default="opt3001")
-callbackgroup.add_argument("--name2","-n2", help="Give the second sensor a name reported to the callback script", default="opt3001_2")
 
 args=parser.parse_args()
 address = 0x44
